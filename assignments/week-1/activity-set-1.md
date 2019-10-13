@@ -16,3 +16,9 @@
     If you are a Windows user, please install MSYS2 or WSL. You then need to install Git on MSYS2 or WSL. The reason is we will be using other tools in the future. Installing these tools is a headache directly, because each installation requires different procedure. MSYS2 and WSL provide a Linux environment on Windows. Which makes things easier for installing the required tools.  
     
     Learn the difference between WSL and MSYS2. This is the only theoretical question for this week. But it will help you in the long run. You need to find your own resources for this. :)
+    
+ 5. Learn how to write documents in Markdown.
+    
+    Markdown is a simple markup language for writing simple documents with basic text formatting.
+    
+    https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
