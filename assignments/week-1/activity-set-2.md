@@ -12,7 +12,7 @@
 
 Given a positive integer n written as abcd... (a, b, c, d... being digits) and a positive integer p
 
-we want to find a positive integer k, if it exists, such as the sum of the digits of n taken to the successive powers of p is equal to k * n.
+We want to find a positive integer k, if it exists, such as the sum of the digits of n taken to the successive powers of p is equal to k * n.
 In other words:
 
 Is there an integer k such as : (a ^ p + b ^ (p+1) + c ^(p+2) + d ^ (p+3) + ...) = n * k
@@ -20,6 +20,21 @@ Is there an integer k such as : (a ^ p + b ^ (p+1) + c ^(p+2) + d ^ (p+3) + ...)
 If it is the case we will return k, if not return -1.
 
 Note: n and p will always be given as strictly positive integers.
+
+Sample Input:
+89 1
+Sample Output:
+1
+
+Sample Input:
+695 2
+Sample Output:
+2
+
+Sample Input:
+46288 3
+Sample Output:
+51
 
 3.  Create a range function that accepts the following parameters.
    - start
@@ -37,11 +52,22 @@ Calling range(0, 10, 2) should give the output: 0 2 4 6 8
    - start
    - count
    - generator
-  The generator is a function that return a value for a given index in the series.
+  The generator is a function that takes input n and multiplies it with current index, the product is given as the output.
 
-  Count is the value of the (last index + 1 ) of the series.
+  The count is the number of numbers in the series.
 
-  For example, if your generator takes input x and returns x^2, and your count is 10, and the start is say 1, then your output series should be, 1 4 9 16 25 36 49 64 81 100
+  Input contains one line having 3 numbers,  a, b and c. a is the start, b is the number of numbers and c is the multiplier.
+
+  Sample Input:
+  1 10 2
+  Sample Output:
+  1 2 4 8 16 32 64 128 256 512
+
+  Sample Input:
+  1 3 10
+  Sample Output:
+  1 10 100
+
 
 5. Write a program that accepts n numbers, and outputs the same.
 
